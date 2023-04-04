@@ -13,7 +13,7 @@ class Level:
 		
 		# Create level
 		with open(os.path.dirname(os.path.abspath(__file__)) + '/levels/' + set + '/level' + str(level_num), 'r') as f:
-    			for row in f.read().splitlines():
+				for row in f.read().splitlines():
 					self.matrix.append(list(row))
 			
 	def __del__(self):
